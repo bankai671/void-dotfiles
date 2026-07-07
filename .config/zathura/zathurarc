@@ -1,0 +1,11 @@
+set recolor true
+set recolor-keephue true
+set recolor-lightcolor "#111111"
+set recolor-darkcolor "#eeeeee"
+set selection-clipboard clipboard
+set selection-notification false
+set adjust-open height
+set page-h-padding 0
+set guioptions none
+set window-title-basename true
+
