@@ -13,6 +13,8 @@ export QT_AUTO_SCREEN_SCALE_FACTOR=1
 export QT_ENABLE_HIGHDPI_SCALING=1
 export QT_QPA_PLATFORMTHEME=qt5ct
 
+export PATH="$HOME/.local/bin:$PATH"
+
 if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
 	startx
 fi
