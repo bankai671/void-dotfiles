@@ -11,7 +11,12 @@ set smartindent
 set autoindent
 set clipboard^=unnamed,unnamedplus
 set mouse=a
+set ttymouse=sgr
+set termguicolors
+
 set noswapfile
+set nobackup
+set nowrap
 
 set ignorecase
 set smartcase
@@ -20,10 +25,11 @@ set hlsearch
 
 set backspace=indent,eol,start
 
-set updatetime=50
+set updatetime=300
 
 set splitbelow
 set splitright
+set signcolumn=yes
 
 syntax on
 
