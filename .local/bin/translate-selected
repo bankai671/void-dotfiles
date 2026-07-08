@@ -1,0 +1,21 @@
+#!/bin/sh
+
+text=$(xclip -selection clipboard -o -t UTF8_STRING 2>/dev/null) || exit
+[ -z "$text" ] && exit
+
+set --
+
+if [ "$(printf '%s' "$text" | wc -w)" -eq 1 ]; then
+    set -- \
+        -no-ansi \
+        -show-original n \
+        -show-original-phonetics n \
+        -show-translation-phonetics n \
+        -show-dictionary n \
+        -show-languages n \
+        -show-prompt-message n
+else
+    set -- --brief
+fi
+
+herbe "$(trans "$@" :ru "$text")"
