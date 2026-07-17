@@ -8,8 +8,8 @@ tiramisu -j | while read -r event; do
     [ "$body" = "null" ] && body=""
 
     if [ -n "$body" ]; then
-        herbe "$summary: $body"
+        herbe "$summary: $body" &
     else
-        herbe "$summary"
+        herbe "$summary" &
     fi
 done

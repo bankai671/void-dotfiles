@@ -5,3 +5,4 @@ set background=dark
 colorscheme habamax
 
 hi Normal ctermbg=NONE guibg=NONE
+
