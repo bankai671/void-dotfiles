@@ -17,7 +17,6 @@ set termguicolors
 set noswapfile
 set nobackup
 set nowrap
-set undofile
 set hidden
 
 set ignorecase
