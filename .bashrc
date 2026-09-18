@@ -17,8 +17,6 @@ __git_complete dotfiles __git_wrap__git_main
 
 complete -F _root_command doas
 
-PS1='[\u@\h \W]\$ '
-
 export EDITOR='vim'
 export LESS_TERMCAP_mb=$'\e[01;31m'
 export LESS_TERMCAP_md=$'\e[01;38;5;74m'
@@ -29,5 +27,18 @@ export LESS_TERMCAP_ue=$'\e[0m'
 export LESS_TERMCAP_us=$'\e[01;32m'
 export LESS='-R'
 
+source /usr/share/git/git-prompt.sh
+PS1='[\u@\h \W]$(__git_ps1 " (%s)")\$ '
+GIT_PS1_SHOWCOLORHINTS=1
+GIT_PS1_SHOWDIRTYSTATE=1
+GIT_PS1_SHOWUNTRACKEDFILES=1
+GIT_PS1_SHOWUPSTREAM="auto"
+
+EDITOR=vim
+
 # opencode
 export PATH=/home/alice/.opencode/bin:$PATH
+
+# go
+export PATH="$PATH:/usr/local/go/bin"
+export PATH="$PATH:$HOME/go/bin"
