@@ -13,6 +13,7 @@ set clipboard^=unnamed,unnamedplus
 set mouse=a
 set ttymouse=sgr
 set termguicolors
+set t_Co=256
 
 set noswapfile
 set nobackup
@@ -36,4 +37,6 @@ set wildmenu
 set wildoptions=pum
 
 syntax on
+
+let c_no_curly_error=1
 

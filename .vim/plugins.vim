@@ -7,6 +7,7 @@ Plug 'yegappan/lsp'
 Plug 'hrsh7th/vim-vsnip'
 Plug 'hrsh7th/vim-vsnip-integ'
 Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-commentary'
 
 call plug#end()
 

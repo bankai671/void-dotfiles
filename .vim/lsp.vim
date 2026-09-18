@@ -1,7 +1,8 @@
 let lspOpts = #{
             \autoHighlightDiags: v:true,
             \noNewlineInCompletion: v:true,
-            \completionTextEdit: v:true,
+            \completionTextEdit: v:false,
+            \snippetSupport: v:true,
             \vsnipSupport: v:true,
             \}
 
@@ -12,7 +13,15 @@ let lspServers = [#{
             \filetype: ['c', 'cpp'],
             \path: '/usr/bin/clangd',
             \args: ['--background-index']
-            \}]
+            \},
+            \#{
+            \name: 'golang',
+            \filetype: ['go', 'gomod'],
+            \path: '/usr/local/bin/gopls',
+            \args: ['serve'],
+            \syncInit: v:true
+            \}
+\]
 
 autocmd User LspSetup call LspAddServer(lspServers)
 
