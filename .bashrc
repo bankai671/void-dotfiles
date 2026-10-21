@@ -36,9 +36,24 @@ GIT_PS1_SHOWUPSTREAM="auto"
 
 EDITOR=vim
 
+# History limits
+HISTFILE="$HOME/.bash_history"
+HISTSIZE=50000
+HISTFILESIZE=100000
+
+# Timestamps
+HISTTIMEFORMAT='%F %T '
+
+# Avoid consecutive duplicates
+HISTCONTROL=ignoredups
+
+# Append history instead of overwriting it
+shopt -s histappend
+
 # opencode
 export PATH=/home/alice/.opencode/bin:$PATH
 
 # go
 export PATH="$PATH:/usr/local/go/bin"
 export PATH="$PATH:$HOME/go/bin"
+
