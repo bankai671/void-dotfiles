@@ -41,9 +41,6 @@ HISTFILE="$HOME/.bash_history"
 HISTSIZE=50000
 HISTFILESIZE=100000
 
-# Timestamps
-HISTTIMEFORMAT='%F %T '
-
 # Avoid consecutive duplicates
 HISTCONTROL=ignoredups
 
