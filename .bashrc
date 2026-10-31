@@ -54,3 +54,7 @@ export PATH=/home/alice/.opencode/bin:$PATH
 export PATH="$PATH:/usr/local/go/bin"
 export PATH="$PATH:$HOME/go/bin"
 
+# nnn
+export NNN_FIFO=/tmp/nnn.fifo
+export NNN_PLUG='p:preview-tabbed'
+
